@@ -1,5 +1,5 @@
 from flask import Flask
-from flask-sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow 
 
 app = Flask(__name__)
@@ -12,5 +12,5 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
-import application.models
-import application.views
+import neptapp.models
+import neptapp.views
