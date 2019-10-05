@@ -24,3 +24,8 @@ class StudentSchema(ma.Schema):
     class Meta:
         fields = ('id','uid','name','email')
 
+
+# Init Schema
+Tutor_schema = TutorSchema(strict=True)
+Tutors_schema = TutorSchema(many=True,strict=True)
+
