@@ -18,8 +18,6 @@ def tsignup():
 
     return Tutor_schema.jsonify(tutor)
 
-
-
 @app.route('/lsignup',methods=['GET,'POST])
 def lsignup():
     if request.method=='POST':
